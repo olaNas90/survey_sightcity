@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">SightCity Survey Form</h1>
+      <p id="description" class="description-area">Please fill out this form with the required information</p>
+    </header>
+    <form id="survey-form">
+      <div class="formG">
+        <label id="name-label" for="name">Name</label>
+        <input
+        id="name" 
+        class="survey-input"
+        type="text" 
+        placeholder="Enter your name" 
+        required/>
+      </div>
+      <div class="formG">
+        <label id="email-label" for="email">Email</label>
+        <input 
+        id="email"
+        class="survey-input" 
+        name="email" 
+        type="email" 
+        placeholder="Enter email" 
+        required/>
+      </div>
+      <div class="formG">
+        <label id="number-label" for="number">Age</label>
+        <input 
+        id="number" 
+        class="survey-input"
+        name="age" 
+        type="number" 
+        min="20" 
+        max="100" 
+        placeholder="Number" 
+        required/>
+      </div>
+      <div class="formG">
+        <p>What best describe your current role?</p>
+        <select id="dropdown" class="survey-input">
+         <option disabled selected value>(Select Occupation)</option>
+         <option value="frontend">Frontend Developer</option>
+         <option value="backend">Backend Developer</option>
+         <option value="fullstack">Fullstack Developer</option>
+         <option value="DA">Data Analyst</option>
+         <option value="CS">CyberSecuirty Analyst</option>
+         <option value="others">Others</option>
+       </select>
+     </div>
+     <div class="formG">
+      <p>Would you recommend our product to a friend?</p>
+      <label>
+        <input id="recommend" type="radio"  class="radio" name="recommend-type" value="definitely" checked />Definitely</label><br>
+        <label><input id="recommend" type="radio" class="radio" name="recommend-type" value="maybe" checked />Maybe</label><br>
+        <label><input id="recommend" type="radio" class="class" name="recommend-type" value="not-sure" checked />Not sure</label><br>
+      </div>
+      <div class="formG">
+        <p>What would you like to see improved?<span class="prompt">(Check all that apply)</span></p>
+        <label><input id="improve" type="checkbox" name="improve" value="communication" class="checkboxes"/>Communication Skill</label><br>
+        <label><input id="improve" type="checkbox" name="improve" value="writing" class="checkboxes"/>Writing Skill</label><br>
+        <label><input id="improve" type="checkbox" name="improve" value="reporting" class="checkboxes"/>Reporting Skill</label><br>
+        <label><input id="improve" type="checkbox" name="improve" value="listening" class="checkboxes" />Listening Skill</label>
+      </div>
+      <div class="formG">
+        <p class="suggest">Any Suggestions or Comments?</p>
+        <textarea id="comments" name="comments" placeholder="Leave comment here..."></textarea>
+      </div>
+      <div class="formG">
+        <button type="submit" class="submitB" id="submit">Submit          
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
